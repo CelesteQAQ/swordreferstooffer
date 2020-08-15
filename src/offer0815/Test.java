@@ -7,7 +7,9 @@ package offer0815;
  **/
 public class Test {
     public static void main(String[] args) {
-        CuttingRope cu = new CuttingRope();
-        cu.cuttingRope(2);
+//        CuttingRope cu = new CuttingRope();
+//        cu.cuttingRope(2);
+        HammingWeight ha =  new HammingWeight();
+        ha.hammingWeight(128);
     }
 }
