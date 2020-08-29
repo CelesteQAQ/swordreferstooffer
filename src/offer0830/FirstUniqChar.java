@@ -38,4 +38,14 @@ public class FirstUniqChar {
         }
         return ' ';
     }
+
+    public char firstUniqChar2(String s){
+        char[] chars = s.toCharArray();
+        int[] state = new int[26];
+        for (char c : chars) state[c - 'a']++;
+        for (char c : chars){
+            if (state[c - 'a'] == 1) return c;
+        }
+        return ' ';
+    }
 }
