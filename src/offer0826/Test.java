@@ -9,7 +9,9 @@ public class Test {
     public static void main(String[] args) {
 //        CountDigitOne co = new CountDigitOne();
 //        co.countDigitOne(12);
-        TranslateNum tr = new TranslateNum();
-        tr.translateNum(18580);
+//        TranslateNum tr = new TranslateNum();
+//        tr.translateNum(18580);
+        NthUglyNumber nug = new NthUglyNumber();
+        nug.nthUglyNumber(10);
     }
 }
