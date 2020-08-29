@@ -39,10 +39,17 @@ public class FirstUniqChar {
         return ' ';
     }
 
+    /**
+     * 另一种更加省时间的做法，因为只是出现小写字符，可以选择建立一个26大小的矩阵，
+     * 然后遍历矩阵将字符存入，最后再遍历一遍，等于1就是结果，没有就返回空格
+     * @param s
+     * @return
+     */
     public char firstUniqChar2(String s){
         char[] chars = s.toCharArray();
         int[] state = new int[26];
         for (char c : chars) state[c - 'a']++;
+        //一定要按照字符遍历顺序再遍历一次才是需要的第一次出现一次的字符
         for (char c : chars){
             if (state[c - 'a'] == 1) return c;
         }
