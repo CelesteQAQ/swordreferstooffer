@@ -21,6 +21,8 @@ import offer0820.TreeNode;
  **/
 public class LowestCommonAncestor {
     /**
+     * II. 二叉树的最近公共祖先
+     * 不小心把二叉树先做了
      * 左右子树去查找是否找到pq
      * 第一，根节点是否为pq，是就返回根节点
      * 第二，不是，就遍历左右子树，左子树存在就返回，右子树返回是没有就是左子树返回的值
